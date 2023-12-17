@@ -7,7 +7,7 @@ session_start();
 <html lang="en">
 
 <head>
-   <title>Online Technician Support  MS</title>
+   <title>Tech Support System TSS</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -324,28 +324,7 @@ element.innerHTML = pagerHtml;
         <div class="pcoded-container navbar-wrapper">
             <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
-                    <div class="navbar-logo">
-                        <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
-                            <i class="ti-menu"></i>
-                        </a>
-                        <div class="mobile-search waves-effect waves-light">
-                            <div class="header-search">
-                                <div class="main-search morphsearch-search">
-                                    <div class="input-group">
-                                        <span class="input-group-prepend search-close"><i class="ti-close input-group-text"></i></span>
-                                        <input type="text" class="form-control" placeholder="Enter Keyword">
-                                        <span class="input-group-append search-btn"><i class="ti-search input-group-text"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="index.html">
-                            <img class="img-fluid" src="../assets/images/logo.png" alt="Theme-Logo" />
-                        </a>
-                        <a class="mobile-options waves-effect waves-light">
-                            <i class="ti-more"></i>
-                        </a>
-                    </div>
+                   
                     <div class="navbar-container container-fluid">
                         <ul class="nav-left">
                             <li>
@@ -376,7 +355,7 @@ element.innerHTML = pagerHtml;
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../assets/images/user.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                           <!--       <h5 class="notification-user">John Doe</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p> -->
@@ -408,16 +387,12 @@ element.innerHTML = pagerHtml;
                             </li>
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
-                                    <img src="../assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                    <img src="../assets/images/user.jpg" class="img-radius" alt="User-Profile-Image">
                                     <span><?php echo $_SESSION["managernames"]; ?></span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
-                                    <li class="waves-effect waves-light">
-                                        <a href="#!">
-                                            <i class="ti-settings"></i> Settings
-                                        </a>
-                                    </li>
+                                   
                              <!--        <li class="waves-effect waves-light">
                                         <a href="user-profile.html">
                                             <i class="ti-user"></i> Profile
@@ -450,42 +425,8 @@ element.innerHTML = pagerHtml;
                     <nav class="pcoded-navbar">
                         <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
                         <div class="pcoded-inner-navbar main-menu">
-                            <div class="">
-                                <div class="main-menu-header">
-                                    <img class="img-80 img-radius" src="../assets/images/avatar-4.jpg" alt="User-Profile-Image">
-                                    <div class="user-details">
-                                        <span id="more-details"><?php echo $_SESSION["managernames"]; ?><i class="fa fa-caret-down"></i></span>
-                                    </div>
-                                </div>
-                                <div class="main-menu-content">
-                                    <ul>
-                                        <li class="more-details">
-                                            <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
-                                            <a href="#!"><i class="ti-settings"></i>Settings</a>
-                                             <a href="../logout.php"><i class="ti-layout-sidebar-left"></i>Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="p-15 p-b-0">
-                                <form class="form-material">
-                                    <div class="form-group form-primary">
-                                        <input type="text" name="footer-email" class="form-control">
-                                        <span class="form-bar"></span>
-                                        <label class="float-label"><i class="fa fa-search m-r-10"></i>Search Friend</label>
-                                    </div>
-                                </form>
-                            </div>
-                          <!--   <div class="pcoded-navigation-label">Navigation</div> -->
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="homeManager.php" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                        <span class="pcoded-mtext">Dashboard</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul>
+                           
+                           
                             <div class="pcoded-navigation-label">Manage Accounts</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
@@ -728,16 +669,14 @@ element.innerHTML = pagerHtml;
                                     <div class="col-md-8">
                                         <div class="page-header-title">
                                           <!--   <h5 class="m-b-10">Bootstrap Basic Tables</h5> -->
-                                         <p class="m-b-0">Welcome to Supports  Techician</p>
+                                          <h4 class="m-b-0">Welcome to Tech Support System TSS</h4>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <ul class="breadcrumb">
                                             <li class="breadcrumb-item">
                                                 <a href="index.html"> <i class="fa fa-home"></i> </a>
-                                            </li>
-                                            <li class="breadcrumb-item"><a href="homeManager.php">Dashboard </a>
-                                            </li>
+                                            
                                            <!--  <li class="breadcrumb-item"><a href="#!">Basic Tables</a> -->
                                             </li>
                                         </ul>
